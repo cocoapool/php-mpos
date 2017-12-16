@@ -12,7 +12,7 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="form-group">
-                <label for="senderName">Your Name</label>
+                <label for="senderName">Your Name(半角英数字で入力してください)</label>
                 <input type="text" class="form-control" name="senderName" value="" placeholder="Please type your name" size="15" maxlength="100" required />
               </div>
               <div class="form-group">
@@ -20,7 +20,7 @@
                 <input type="text" class="form-control" name="senderEmail" value="" placeholder="Please type your email" size="50"  maxlength="100" required />
               </div>
               <div class="form-group">
-                <label for="senderEmail">Your Subject</label>
+                <label for="senderEmail">Subject(半角英数字で入力してください)</label>
                 <input type="text" class="form-control" name="senderSubject" value="" placeholder="Please type your subject" size="15" maxlength="100" required />
               </div>
               <div class="col-lg-6">
