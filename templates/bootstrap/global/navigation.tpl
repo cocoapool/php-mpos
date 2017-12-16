@@ -2,23 +2,23 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="{$smarty.server.SCRIPT_NAME}"><i class="fa fa-home fa-fw"></i> Home</a>
+                        <a href="{$smarty.server.SCRIPT_NAME}"><i class="fa fa-home fa-fw"></i> ホーム</a>
                     </li>
                     {if $smarty.session.AUTHENTICATED|default:"0" == 1}
                     <li>
-                        <a href="{$smarty.server.SCRIPT_NAME}?page=dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a href="{$smarty.server.SCRIPT_NAME}?page=dashboard"><i class="fa fa-dashboard fa-fw"></i> ダッシュボード</a>
                     </li>
 
                     <li {if $smarty.get.page|default:"0" eq "account"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-user-md fa-fw"></i> My Account<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-user-md fa-fw"></i> マイアカウント<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=edit"><i class="fa fa-edit fa-fw"></i> Edit Account</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers"><i class="fa fa-desktop fa-fw"></i> My Workers</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=transactions"><i class="fa fa-credit-card fa-fw"></i> Transactions</a></li>
-                          {if !$GLOBAL.config.disable_transactionsummary}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=earnings"><i class="fa fa-money fa-fw"></i> Earnings</a></li>{/if}
-                          {if !$GLOBAL.config.disable_notifications}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=notifications"><i class="fa fa-bullhorn fa-fw"></i> Notifications</a></li>{/if}
-                          {if !$GLOBAL.config.disable_invitations}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=invitations"><i class="fa fa-users fa-fw"></i> Invitations</a></li>{/if}
-                          {if !$GLOBAL.acl.qrcode}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=qrcode"><i class="fa fa-qrcode fa-fw"></i> QR Codes</a></li>{/if}
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=edit"><i class="fa fa-edit fa-fw"></i> アカウント編集</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=workers"><i class="fa fa-desktop fa-fw"></i> ワーカー</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=transactions"><i class="fa fa-credit-card fa-fw"></i> トランザクション</a></li>
+                          {if !$GLOBAL.config.disable_transactionsummary}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=earnings"><i class="fa fa-money fa-fw"></i> 収益</a></li>{/if}
+                          {if !$GLOBAL.config.disable_notifications}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=notifications"><i class="fa fa-bullhorn fa-fw"></i> 通知設定</a></li>{/if}
+                          {if !$GLOBAL.config.disable_invitations}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=invitations"><i class="fa fa-users fa-fw"></i> 招待</a></li>{/if}
+                          {if !$GLOBAL.acl.qrcode}<li><a href="{$smarty.server.SCRIPT_NAME}?page=account&action=qrcode"><i class="fa fa-qrcode fa-fw"></i> QRコード</a></li>{/if}
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
@@ -66,42 +66,42 @@
                     {/if}
                     {if ($GLOBAL.acl.statistics.loggedin|default:"0" == 0 && ($smarty.session.AUTHENTICATED|default:"0" == 0 OR $smarty.session.AUTHENTICATED|default:"0" == 1)) OR ($GLOBAL.acl.statistics.loggedin|default:"0" == 1 && $smarty.session.AUTHENTICATED|default:"0" == 1)}
                     <li {if $smarty.get.page|default:"0" eq "statistics"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Statistics<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 統計情報<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                          {acl_check page='statistics' action='pool' name='<i class="fa fa-align-left fa-fw"></i> Pool' acl=$GLOBAL.acl.pool.statistics fallback='page=statistics'}
-                          {acl_check page='statistics' action='blocks' name='<i class="fa fa-th-large fa-fw"></i> Blocks' acl=$GLOBAL.acl.block.statistics}
-                          {acl_check page='statistics' action='round' name='<i class="fa fa-refresh fa-fw"></i> Round' acl=$GLOBAL.acl.round.statistics}
-                          {acl_check page='statistics' action='blockfinder' name='<i class="fa fa-search fa-fw"></i> Blockfinder' acl=$GLOBAL.acl.blockfinder.statistics}
-                          {acl_check page='statistics' action='uptime' name='<i class="fa fa-clock-o fa-fw"></i> Uptime' acl=$GLOBAL.acl.uptime.statistics}
-                          {acl_check page='statistics' action='graphs' name='<i class="fa fa-signal fa-fw"></i> Graphs' acl=$GLOBAL.acl.graphs.statistics}
-                          {acl_check page='statistics' action='donors' name='<i class="fa fa-bitbucket fa-fw"></i> Donors' acl=$GLOBAL.acl.donors.page}
+                          {acl_check page='statistics' action='pool' name='<i class="fa fa-align-left fa-fw"></i> プール' acl=$GLOBAL.acl.pool.statistics fallback='page=statistics'}
+                          {acl_check page='statistics' action='blocks' name='<i class="fa fa-th-large fa-fw"></i> ブロック' acl=$GLOBAL.acl.block.statistics}
+                          {acl_check page='statistics' action='round' name='<i class="fa fa-refresh fa-fw"></i> ラウンド' acl=$GLOBAL.acl.round.statistics}
+                          {acl_check page='statistics' action='blockfinder' name='<i class="fa fa-search fa-fw"></i> ブロック採掘者' acl=$GLOBAL.acl.blockfinder.statistics}
+                          {acl_check page='statistics' action='uptime' name='<i class="fa fa-clock-o fa-fw"></i> 稼働時間' acl=$GLOBAL.acl.uptime.statistics}
+                          {acl_check page='statistics' action='graphs' name='<i class="fa fa-signal fa-fw"></i> グラフ' acl=$GLOBAL.acl.graphs.statistics}
+                          {acl_check page='statistics' action='donors' name='<i class="fa fa-bitbucket fa-fw"></i> 寄付' acl=$GLOBAL.acl.donors.page}
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     {/if}
                     {if ($GLOBAL.acl.help.loggedin|default:"0" == 0 && ($smarty.session.AUTHENTICATED|default:"0" == 0 OR $smarty.session.AUTHENTICATED|default:"0" == 1)) OR ($GLOBAL.acl.help.loggedin|default:"0" == 1 && $smarty.session.AUTHENTICATED|default:"0" == 1)}
                     <li {if $smarty.get.page|default:"0" eq "gettingstarted" || $smarty.get.page|default:"0" eq "about"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-question fa-fw"></i> Help<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-question fa-fw"></i> ヘルプ<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=gettingstarted"><i class="fa fa-question fa-fw"></i> Getting Started</a></li>
-                          {acl_check page='about' action='pool' name='<i class="fa fa-info fa-fw"></i> About' acl=$GLOBAL.acl.about.page}
-                          {acl_check page='about' action='chat' name='<i class="fa fa-comments-o fa-fw"></i> Web Chat' acl=$GLOBAL.acl.chat.page}
-                          {acl_check page='about' action='moot' name='<i class="fa fa-ticket fa-fw"></i> Forum' acl=$GLOBAL.acl.moot.forum}
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=gettingstarted"><i class="fa fa-question fa-fw"></i> スタートガイド</a></li>
+                          {acl_check page='about' action='pool' name='<i class="fa fa-info fa-fw"></i> よくある質問' acl=$GLOBAL.acl.about.page}
+                          {acl_check page='about' action='chat' name='<i class="fa fa-comments-o fa-fw"></i> Webチャット' acl=$GLOBAL.acl.chat.page}
+                          {acl_check page='about' action='moot' name='<i class="fa fa-ticket fa-fw"></i> フォーラム' acl=$GLOBAL.acl.moot.forum}
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     {/if}
                     <li {if $smarty.get.page|default:"0" eq "register" || $smarty.get.page|default:"0" eq "login" || $smarty.get.page|default:"0" eq "logout" || $smarty.get.page|default:"0" eq "tac" || $smarty.get.page|default:"0" eq "contactform"}class="active"{/if}>
-                        <a href="#"><i class="fa fa-tasks fa-fw"></i> Other<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-tasks fa-fw"></i> その他<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                           {if $smarty.session.AUTHENTICATED|default:"0" == 1}
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=logout"><i class="fa fa-sign-out fa-fw"></i> ログアウト</a></li>
                           {else}
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=login"><i class="fa fa-sign-in fa-fw"></i> Login</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=register"><i class="fa fa-pencil fa-fw"></i> Sign Up</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=login"><i class="fa fa-sign-in fa-fw"></i> ログイン</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=register"><i class="fa fa-pencil fa-fw"></i> サインアップ</a></li>
                           {/if}
-                          {acl_check page='contactform' action='' name='<i class="fa fa-envelope fa-fw"></i> Contact' acl=$GLOBAL.acl.contactform}
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=tac"><i class="fa fa-book fa-fw"></i> Terms and Conditions</a></li>
+                          {acl_check page='contactform' action='' name='<i class="fa fa-envelope fa-fw"></i> お問い合わせ' acl=$GLOBAL.acl.contactform}
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=tac"><i class="fa fa-book fa-fw"></i> 利用規約</a></li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
