@@ -109,5 +109,18 @@
                 <!-- /#side-menu -->
             </div>
             <!-- /.sidebar-collapse -->
+            <!-- Google adsence -->
+            <div class="ad-container ad-side">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- cocoapool-左メニュー用 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-6212603832095491"
+     data-ad-slot="2805204548"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+            <!-- /Google adsence -->
         </nav>
         <!-- /.navbar-static-side -->
