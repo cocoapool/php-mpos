@@ -4,6 +4,8 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{$GLOBAL.website.title} - {$smarty.request.page|escape|default:"home"|capitalize}</title>
+  <meta name="description" content="仮想通貨 BitZeny の マイニング・プールです" />
+
   
   <!--[if lt IE 9]>
   <link rel="stylesheet" href="{$PATH}/css/ie.css" type="text/css" media="screen" />
