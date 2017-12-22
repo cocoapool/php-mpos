@@ -110,6 +110,7 @@
             </div>
             <!-- /.sidebar-collapse -->
             <!-- Google adsence -->
+            {if $smarty.server.HTTP_HOST eq "www.cocoapool.net"}
             <div class="ad-container ad-side">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- cocoapool-左メニュー用 -->
@@ -121,6 +122,7 @@
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
             </div>
+            {/if}
             <!-- /Google adsence -->
         </nav>
         <!-- /.navbar-static-side -->
