@@ -98,7 +98,7 @@
                           <li><a href="{$smarty.server.SCRIPT_NAME}?page=logout"><i class="fa fa-sign-out fa-fw"></i> ログアウト</a></li>
                           {else}
                           <li><a href="{$smarty.server.SCRIPT_NAME}?page=login"><i class="fa fa-sign-in fa-fw"></i> ログイン</a></li>
-                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=register"><i class="fa fa-pencil fa-fw"></i> サインアップ</a></li>
+                          <li><a href="{$smarty.server.SCRIPT_NAME}?page=register"><i class="fa fa-pencil fa-fw"></i> 新規登録</a></li>
                           {/if}
                           {acl_check page='contactform' action='' name='<i class="fa fa-envelope fa-fw"></i> お問い合わせ' acl=$GLOBAL.acl.contactform}
                           <li><a href="{$smarty.server.SCRIPT_NAME}?page=tac"><i class="fa fa-book fa-fw"></i> 利用規約</a></li>
