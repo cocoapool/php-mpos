@@ -1,0 +1,15 @@
+/* overwrite style infos */
+
+/* ------------------------------- */
+
+.navbar-brand {
+  padding-left: 30px;
+  background-image: url("/site_assets/bootstrap/images/logo.png");
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: center;
+}
+
+.navbar-default {
+  background-color: #e7f7e7;
+}
