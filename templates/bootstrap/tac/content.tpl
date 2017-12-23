@@ -1,10 +1,26 @@
-<p>This Agreement governs your use of {$GLOBAL.website.name}.</p>
+<p>{$GLOBAL.website.name} では以下の利用規約を設けています。</p>
+<h3>基本事項</h3>
 <ul>
-  <li>By using any of the Pools or registering an account on the website, you agree to be bound by the terms and conditions below. If you do not agree with the terms and conditions in this Agreement you may not use the Pool.</li>
-  <li>The {$GLOBAL.website.name} staff may modify this Agreement and any policies affecting the Site at any point of time. Such modification is effective immediately upon posting to the website and will be distribution via email, forum post and a link in chat. Your continued use of the Pool following any modification to this Agreement shall be deemed an acceptance of all modifications.</li>
-  <li>The Pool rewards miners according to a <strong>{$GLOBAL.config.payout_system|upper}</strong> system with <strong>{$GLOBAL.fees|upper}%</strong> fee. The fee may change at any time, but notice will be given before doing so. Any fee change will be communicated through the pools news page.</li>
-  <li>The Pool is not an e-wallet or a bank for your coins. The Pool and it's operators are not responsible for any loss of coins which are stored on the Pool. It is your responsibility to configure your account so that the coins you mine are regularly transferred to your own secured offline wallet.</li>
-  <li>The uptime of the pool or website is not guaranteed, maintenance and downtime may be required at times. Users are responsible for configuring their miners so that they will automatically reconnect, switch to all the pools we offer or a backup pool in the case of downtime.</li>
-  <li>Botnets are not welcome. Accounts with a large amount of miners connecting from different IPs may be suspended without prior notice. If we are uncertian then an investigation will be opened and the user will be notified via their configured e-mail address. If we do not receive a response your account may be suspended.</li>
-  <li>Multiple accounts controlled by one person may be considered as a botnet and an investigation will be opened, see above point.</li>
+  <li>{$GLOBAL.website.name}(以下、当サイト)の機能の使用、もしくはアカウントの登録をした場合、以下の規約およびプライバシーポリシーに同意するものとみなします。同意できない場合、当サイトを利用することはできません。</li>
+  <li>当サイトの運営者は本利用規約をいつでも改定できるものとします。改定は本頁や掲示板などで告知され、告知後ただちに有効になります。本利用規約の変更後も継続して当サイトを利用し続ける場合、全ての変更点に同意したものとみなされます。</li>
+  <li>当サイトの報酬分配方式は <strong>{$GLOBAL.config.payout_system|upper}</strong> 、マイニングフィーは <strong>{$GLOBAL.fees|upper}%</strong> とします。利用手数料が変更となる場合はお知らせページや掲示板にて告知いたします。</li>
+  <li>ユーザーはいつでも本サービスの利用を終了することができます。当サイトもいつでも、ユーザーに対する本サービスの提供を停止し、または、本サービスに対する制限を追加または新規に設定することができます。</li>
+</ul>
+
+<h3>免責事項</h3>
+<ul>
+  <li>当サイトのご利用にあたり、何らかのトラブルや損害等(機会損失を含む)が発生したとしても一切責任を負いかねます。</li>
+  <li>当サイトはウェブウォレットや貯金箱としての利用を想定していません。よって当サイトは保管されている仮想通貨の喪失については責任を負いかねます。各自の責任で安全なウォレットへの転送を行ってください。</li>
+  <li>当サイトの採掘サーバーやWebサーバーの稼働率は保証できません。時にはメンテナンスや不具合でサーバーが停止することもあり得ます。ユーザーはサーバーダウンに備えて予備のプールへの切り替え設定を行ってください。</li>
+  <li>毎月16日の0:00から定期メンテナンスを行います。メンテナンス内容によっては各サーバーの稼働を一時停止する場合があります。ご承知おきください。</li>
+  <li>当サイトの統計ページ等にあるリンク先の内容については一切保証しかねます。</li>
+</ul>
+
+<h3>禁止事項</h3>
+禁止行為を行ったアカウントに対しては予告なしにアカウントの停止や削除をする場合があります。
+<ul>
+  <li>ボットネットを利用した不正な採掘は禁止です。常軌を脱する多さのワーカーを異なるIPから接続しているアカウントはボットネットとみなすことがあります。また、ボットネットの疑いがあるユーザーに対しては登録メールアドレスに対してご連絡を行い、応答がない場合アカウントを停止させます。</li>
+  <li>1人が複数のアカウントを操作している場合、ボットネットの疑いをかけることがあります。ボットネットに対する処置は上項を参照してください。</li>
+  <li>法に背くような行為や犯罪を助長する行為は禁止です。</li>
+  <li>その他、合理的な理由により当サイトの運営者が不正行為と判断する行為を行ったアカウントも停止や削除の対象となります。</li>
 </ul>
