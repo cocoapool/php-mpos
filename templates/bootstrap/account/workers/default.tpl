@@ -6,20 +6,20 @@
     <input type="hidden" name="ctoken" value="{$CTOKEN|escape|default:""}">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-plus-square-o fa-fw"></i> Add New Worker
+        <i class="fa fa-plus-square-o fa-fw"></i> ワーカーを追加する
       </div>
         <div class="panel-body">
           <div class="form-group">
-            <label>Worker Name</label>
+            <label>ワーカー名</label>
             <input class="form-control" type="text" name="username" value="user" size="10" maxlength="20" required>
           </div>
           <div class="form-group">
-            <label>Worker Password</label>
+            <label>ワーカーのパスワード</label>
             <input class="form-control" type="text" name="password" value="password" size="10" maxlength="20" required>
           </div>
         </div>
       <div class="panel-footer">
-        <input type="submit" value="Add New Worker" class="btn btn-success btn-sm">
+        <input type="submit" value="ワーカーを追加する" class="btn btn-success btn-sm">
       </div>
     </div>
   </form>
@@ -27,7 +27,7 @@
   <div class="col-lg-9">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-gears fa-fw"></i> Worker Configuration
+        <i class="fa fa-gears fa-fw"></i> ワーカーの設定を変更する
       </div>
       <form action="{$smarty.server.SCRIPT_NAME}" method="post" role="form">
         <input type="hidden" name="page" value="{$smarty.request.page|escape}">
@@ -39,13 +39,13 @@
           <table class="table">
              <thead>
                 <tr>
-                  <th class="smallwidth">Worker Login</th>
-                  <th class="smallwidth">Worker Password</th>
-                  <th class="text-center">Active</th>
-                  {if $GLOBAL.config.disable_notifications != 1 && $DISABLE_IDLEWORKERNOTIFICATIONS != 1}<th class="text-center">Monitor</th>{/if}
+                  <th class="smallwidth">ワーカーのログイン名</th>
+                  <th class="smallwidth">ワーカーのパスワード</th>
+                  <th class="text-center">アクティブ?</th>
+                  {if $GLOBAL.config.disable_notifications != 1 && $DISABLE_IDLEWORKERNOTIFICATIONS != 1}<th class="text-center">モニタリング</th>{/if}
                   <th class="text-right">Khash/s</th>
                   <th class="text-right">Difficulty</th>
-                  <th class="text-center">Action</th>
+                  <th class="text-center">削除</th>
                 </tr>
              </thead>
              <tbody>
@@ -77,7 +77,7 @@
             </table>
           </div>
           <div class="panel-footer">
-            <input type="submit" class="btn btn-success btn-sm" value="Update Workers">
+            <input type="submit" class="btn btn-success btn-sm" value="ワーカーを更新する">
           </div>
         </div>
       </form>
