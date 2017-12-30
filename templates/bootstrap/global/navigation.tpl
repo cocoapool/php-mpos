@@ -116,8 +116,8 @@
 <!-- cocoapool-左メニュー用 -->
 <ins class="adsbygoogle"
      style="display:inline-block;width:160px;height:600px"
-     data-ad-client="ca-pub-6212603832095491"
-     data-ad-slot="2805204548"></ins>
+     data-ad-client="ca-pub-8170549183340313"
+     data-ad-slot=""></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
