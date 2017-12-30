@@ -39,6 +39,15 @@
   <script src="{$PATH}/js/plugins/morris/morris-0.5.1.min.js"></script>
   <script src="{$PATH}/js/plugins/sparkline/jquery.sparkline.min.js"></script>
   <script src="{$PATH}/js/mpos.js"></script>
+  {if $smarty.server.HTTP_HOST eq "www.cocoapool.net"}
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-8170549183340313",
+      enable_page_level_ads: true
+    });
+  </script>
+  {/if}
 </head>
 <body>
   <div id="wrapper">
