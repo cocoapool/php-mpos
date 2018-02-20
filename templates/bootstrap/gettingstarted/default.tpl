@@ -34,13 +34,16 @@ Windows10を使ってマイニングを開始する方法を説明いたしま�
     <p>3. <strong>マイニング用ソフトのダウンロードと設定</strong></p>
       <ul>
         <li>
-          <a href="http://bitzeny.org/">公式ページ</a>から、右下にある「Download Miner」の「Windows 64bit 11/10版　SSE」のリンクを探して、ダウンロードします。<br/>
+          <a href="https://github.com/macchky/cpuminer/releases/tag/v2.6.0">macchky/cpuminer のページ</a>から、「ZNYminer260.zip」のリンクを探して、ダウンロードします。<br/>
         </li>
         <li>
           ダウンロードしたzipファイルを展開します。<br/>
         </li>
         <li>
-          展開してできた「minerd.exe」と同じフォルダ内に、「start-cocoapool.bat」というファイルを作り、以下の内容を入力して保存します。<br/>
+          展開してできた「minerd260.exe」を「minerd.exe」にリネームします。<br/>
+        </li>
+        <li>
+          「minerd.exe」と同じフォルダ内に、「start-cocoapool.bat」というファイルを作り、以下の内容を入力して保存します。<br/>
           <pre>minerd.exe -a yescrypt -o stratum+tcp://s.cocoapool.net:14942 -u ユーザ名.user -p password</pre>
           「ユーザ名」の部分は、マイニングプールに登録した際のユーザ名に置き換えてください。<br/>
         </li>
